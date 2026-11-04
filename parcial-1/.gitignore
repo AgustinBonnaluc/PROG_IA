@@ -1,0 +1,9 @@
+# Entorno
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Configuración local con rutas propias (versionar solo el .example)
+mcp_config.json
+.env

@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "supabase": {
+      "serverUrl": "https://mcp.supabase.com/mcp?project_ref=TU_PROJECT_REF&features=database,docs"
+    },
+    "mcp_corte": {
+      "command": "C:/RUTA/AL/PROYECTO/.venv/Scripts/python.exe",
+      "args": [
+        "C:/RUTA/AL/PROYECTO/mcp_corte/servidor.py"
+      ]
+    }
+  }
+}

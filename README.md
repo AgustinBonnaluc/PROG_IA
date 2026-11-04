@@ -3,6 +3,9 @@
 **Parcial 2 · Programación con IA Generativa**
 Autor: Agustín Bonnaluc
 
+> El Parcial 1 (optimizador de cortes con servidores MCP) está en
+> [`parcial-1/`](parcial-1/), con su propio README, tal como se entregó.
+
 ## Descripción
 
 Continuación del Parcial 1, donde se optimizó el corte de perfiles de acero de
@@ -98,6 +101,8 @@ corte-ot-agente/
     ├── conftest.py             # LLM falso y repositorio en memoria
     ├── unit/                   # validación, optimizador, pedido, configuración
     └── integration/            # flujo completo, cliente Ollama, SQL, generar-pruebas
+├── borradores/                 # tests redactados por la skill generar-pruebas
+└── parcial-1/                  # entrega del Parcial 1
 ```
 
 ## Requisitos previos
@@ -200,6 +205,11 @@ python -m bandit -c pyproject.toml -r runner corte web
 Resultado: sin hallazgos. El mismo análisis sobre el panel del Parcial 1 marcaba
 un problema de severidad alta (`B201`: Flask con `debug=True`, que expone el
 depurador de Werkzeug y permite ejecutar código), corregido en esta versión.
+Para reproducir la comparación:
+
+```powershell
+python -m bandit -r parcial-1/web parcial-1/corte
+```
 
 | Riesgo | Mitigación | Prueba |
 |---|---|---|
