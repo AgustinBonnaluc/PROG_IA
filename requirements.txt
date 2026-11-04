@@ -1,0 +1,14 @@
+# Agente
+pyyaml>=6.0
+
+# Optimizador
+ortools>=9.10
+
+# Base de datos (Supabase / Postgres) y panel web
+psycopg2-binary>=2.9
+python-dotenv>=1.0
+flask>=3.0
+
+# Pruebas y análisis de seguridad
+pytest>=8.0
+bandit>=1.7

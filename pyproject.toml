@@ -1,0 +1,7 @@
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-p no:cacheprovider"
+
+[tool.bandit]
+exclude_dirs = ["tests", "borradores", ".venv"]

@@ -1,0 +1,8 @@
+# Entorno
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Secretos: versionar solo el .example
+.env
